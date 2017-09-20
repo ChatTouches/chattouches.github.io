@@ -1,0 +1,43 @@
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            ChatTouches
+tagline:          Touch me, Chat
+description:      Blog posts about the technical workings of <a href="https://twitch.tv/chattouches" target="_blank">ChatTouches</a>.
+url:              "https://chattouches.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl:          "/" # the subpath of your site
+
+author:
+  name:           'ChatTouches'
+  url:            https://twitter.com/chattouches
+  github:         "ChatTouches"
+
+paginate:         5
+
+# jekyll-seo-tag
+twitter:
+    username: "chattouches"
+
+social:
+    name: "ChatTouches"
+    links:
+        - https://twitter.com/chattouches
+        - https://github.com/chattouches
+        - https://twitch.tv/chattouches
+
+google_site_verification: WNcWbikFCt73ErpkIMCbWXhbHLiCSYynLeu3fX1j6lQ
+
+# Build settings
+markdown:         kramdown
+highlighter:      rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-seo-tag
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
