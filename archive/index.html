@@ -1,0 +1,21 @@
+---
+layout: page
+title: Archive
+permalink: /archive/
+---
+
+<section class="archive-post-list">
+
+    {% for post in site.posts %}
+       {% assign currentYear = post.date | date: "%Y" %}
+       {% if currentYear != myYear %}
+           {% unless forloop.first %}</ul>{% endunless %}
+           <h2>{{ currentYear }}</h2>
+           <ul class="archive-list">
+           {% assign myYear = currentYear %}
+       {% endif %}
+       <li><a href="{{ post.url }}"><span class="archive-meta">{{ post.date | date: "%B %-d, %Y" }}</span> - {{ post.title }}</a></li>
+       {% if forloop.last %}</ul>{% endif %}
+   {% endfor %}
+
+</section>
