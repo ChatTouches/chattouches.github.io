@@ -4,7 +4,7 @@
 }
 .theme-base-10 .content a,
 .theme-base-10 .related-posts li a:hover {
-  color: #36447c;
+  color: #8290C9;
 }
 
 
@@ -27,14 +27,9 @@
     list-style: none
 }
 
-.archive-list>li {
-    margin-bottom: 50px;
-    overflow: hidden
-}
-
 .archive-meta {
     font-size: 20px;
-    color: #8f8f8f;
+    color: #8290C9;
     overflow: hidden;
     margin: 0
 }
